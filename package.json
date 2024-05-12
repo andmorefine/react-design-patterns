@@ -1,0 +1,28 @@
+{
+  "name": "react-typescript-solid-principle",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.x",
+    "react-dom": "^18.x"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.62",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "postcss": "^8.x",
+    "postcss-cli": "^11.x",
+    "tailwindcss": "^3.x",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.x",
+    "vite": "^5.x",
+    "vite-tsconfig-paths": "^4.3.1"
+  }
+}
