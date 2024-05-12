@@ -12,6 +12,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
+      "@contexts/*": ["src/contexts/*"],
       "@type/*": ["src/type/*"]
     },
     "outDir": "dist",
