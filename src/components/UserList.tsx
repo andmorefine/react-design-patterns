@@ -1,14 +1,8 @@
 // ユーザーの一覧を表示する
 import React from 'react'
-import { User } from '@components/UsersContainer'
+import { UserListProps } from '@type/index'
 
-interface Props {
-  isLoading: boolean
-  isError: boolean
-  users: User[]
-}
-
-const UserList = ({ isLoading, isError, users }: Props) => {
+export const UserList = ({ isLoading, isError, users }: UserListProps) => {
   if (isLoading && !isError) return <div>ローディング中...</div>
 
   if (!isLoading && isError) {
@@ -30,4 +24,3 @@ const UserList = ({ isLoading, isError, users }: Props) => {
     </>
   )
 }
-export default UserList

@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import UserList from '@components/UserList'
-
-export interface User {
-  id: number
-  name: string
-  email: string
-}
+import { UserList } from '@components/UserList'
+import { User } from '@type/index'
 
 export const UsersContainer = () => {
   const [users, setUsers] = useState<User[]>([])
