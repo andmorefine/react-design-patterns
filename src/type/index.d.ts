@@ -17,3 +17,7 @@ export interface State {
 export interface Action {
   type: string
 }
+
+export type MessageProps = {
+  message: string
+}

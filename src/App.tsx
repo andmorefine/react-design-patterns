@@ -4,6 +4,7 @@ import { UsersContainerByHook } from '@components/UsersContainerByHook'
 import { Counter } from '@components/Counter'
 import { UserContext } from '@contexts/UserContext'
 import { Dashboard } from '@components/Dashboard'
+import { Enhanced } from '@components/Enhanced'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <UserContext.Provider value="Reactユーザー">
         <Dashboard />
       </UserContext.Provider>
+      <Enhanced />
     </div>
   )
 }

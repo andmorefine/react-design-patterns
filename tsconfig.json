@@ -13,6 +13,7 @@
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@contexts/*": ["src/contexts/*"],
+      "@functions/*": ["src/functions/*"],
       "@type/*": ["src/type/*"]
     },
     "outDir": "dist",
