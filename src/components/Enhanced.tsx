@@ -6,11 +6,11 @@ export const Enhanced = () => {
   const EnhancedMessage = WithUpperCase(Message)
 
   return (
-    <div>
-      <p>
+    <div className="flex flex-col items-center justify-center mt-10">
+      <p className="text-lg text-gray-800 mb-4">
         <EnhancedMessage message="hello world" />
       </p>
-      <p>
+      <p className="text-lg text-gray-800 mb-4">
         <EnhancedMessage message="my name is taro yamada." />
       </p>
     </div>
