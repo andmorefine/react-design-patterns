@@ -27,3 +27,11 @@ export interface ModalProps {
   isOpen: boolean
   toggleModal: () => void
 }
+
+export interface ToggleProps {
+  render: (args: { on: boolean; toggle: () => void }) => JSX.Element
+}
+
+export interface ToggleState {
+  on: boolean
+}

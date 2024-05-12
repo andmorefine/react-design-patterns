@@ -6,6 +6,7 @@ import { UserContext } from '@contexts/UserContext'
 import { Dashboard } from '@components/Dashboard'
 import { Enhanced } from '@components/Enhanced'
 import { CardModal } from '@components/CardModal'
+import { Toggle } from '@components/Toggle'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       </UserContext.Provider>
       <Enhanced />
       <CardModal />
+      <Toggle />
     </div>
   )
 }
