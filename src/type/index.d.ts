@@ -9,3 +9,11 @@ export interface UserListProps {
   isError: boolean
   users: User[]
 }
+
+export interface State {
+  count: number
+}
+
+export interface Action {
+  type: string
+}
