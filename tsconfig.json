@@ -10,7 +10,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@widgets/*": ["src/widgets/*"]
+      "@components/*": ["src/components/*"]
     },
     "outDir": "dist",
     "noImplicitReturns": true,
