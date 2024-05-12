@@ -21,3 +21,9 @@ export interface Action {
 export type MessageProps = {
   message: string
 }
+
+export interface ModalProps {
+  children: JSX.Element
+  isOpen: boolean
+  toggleModal: () => void
+}

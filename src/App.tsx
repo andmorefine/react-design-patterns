@@ -5,6 +5,7 @@ import { Counter } from '@components/Counter'
 import { UserContext } from '@contexts/UserContext'
 import { Dashboard } from '@components/Dashboard'
 import { Enhanced } from '@components/Enhanced'
+import { CardModal } from '@components/CardModal'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Dashboard />
       </UserContext.Provider>
       <Enhanced />
+      <CardModal />
     </div>
   )
 }
