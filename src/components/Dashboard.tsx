@@ -3,5 +3,5 @@ import { UserContext } from '@contexts/UserContext'
 
 export const Dashboard = () => {
   const userValue = useContext(UserContext)
-  return <h1>{userValue}</h1>
+  return <h1 className="text-3xl font-bold text-center my-4">{userValue}</h1>
 }

@@ -13,11 +13,18 @@ export const UserList = ({ isLoading, isError, users }: UserListProps) => {
 
   return (
     <>
-      <h2>ユーザー一覧</h2>
-      <ul>
+      <h2 className="text-2xl font-bold text-center my-4">ユーザー一覧</h2>
+      <ul className="list-disc list-inside bg-gray-100 p-4 rounded-lg shadow-md">
         {users.map((user) => (
-          <li key={user.id}>
-            名前: {user.name} (メール: {user.email})
+          <li key={user.id} className="p-2 hover:bg-gray-200">
+            名前: <span className="font-semibold">{user.name}</span> (メール:{' '}
+            <a
+              href={`mailto:${user.email}`}
+              className="text-blue-500 hover:text-blue-700"
+            >
+              {user.email}
+            </a>
+            )
           </li>
         ))}
       </ul>

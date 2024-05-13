@@ -11,7 +11,6 @@ import { Toggle } from '@components/Toggle'
 const App = () => {
   return (
     <div>
-      <UsersContainer />
       <UsersContainerByHook />
       <Counter />
       <UserContext.Provider value="Reactユーザー">

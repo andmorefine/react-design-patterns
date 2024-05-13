@@ -18,10 +18,24 @@ const reducer = (state: State, action: Action) => {
 export const Counter = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
   return (
-    <div>
-      <p>カウント: {state.count}</p>
-      <button onClick={() => dispatch({ type: 'increment' })}>増加</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>減少</button>
+    <div className="flex flex-col items-center justify-center space-y-4 mt-10">
+      <p className="text-lg font-semibold">
+        カウント: <span className="text-blue-600">{state.count}</span>
+      </p>
+      <div className="flex space-x-2">
+        <button
+          onClick={() => dispatch({ type: 'increment' })}
+          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          増加
+        </button>
+        <button
+          onClick={() => dispatch({ type: 'decrement' })}
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          減少
+        </button>
+      </div>
     </div>
   )
 }
